@@ -1,0 +1,315 @@
+.image {
+    width: 40%;
+    border-radius: 10%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: aliceblue;
+}
+
+.nav {
+    width: 30%;
+    background-color: rgb(255 255 255);
+    border-radius: 10px;
+    border: 5px solid transparent;
+}
+
+.nav-item {
+    margin-right: 2%;
+}
+
+.nav-link {
+    color: black !important;
+    font-weight: 600 !important;
+}
+
+
+.nav-link:hover {
+
+    color: rgb(14, 20, 201) !important;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.toggleicon {
+    font-size: 25px !important;
+    float: right;
+    border-radius: 100%;
+    padding: 10px;
+    position: fixed;
+    bottom: 8%;
+    right: 20px;
+
+}
+
+.toggleicon:hover {
+    transform: scale(1.2);
+}
+
+.myName {
+    font-size: 40px;
+    font-weight: 900;
+    text-shadow: 3px 2px 5px #ee99bed4;
+}
+
+.myDetails {
+    font-size: 19px;
+}
+
+.icons {
+    font-size: 25px !important;
+    /* float: right; */
+    border-radius: 100%;
+    padding: 10px;
+    position: static;
+    /* border: 1px solid white; */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.icons:hover {
+    transform: scale(1.2);
+}
+
+.sectionHead {
+    margin-top: 7% !important;
+
+}
+
+.skillSection {
+    margin-left: 24%;
+}
+
+.skillName {
+    margin-left: 1%;
+    margin-right: 2%;
+
+}
+
+.experienceDetails {
+    margin-left: 25%;
+}
+
+.techSkills {
+    display: flex;
+    margin-left: 23%;
+}
+
+.techSkills2 {
+    display: flex;
+    margin-left: 34%;
+}
+
+
+.contact-form {
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+.form-floating {
+    margin-bottom: 20px;
+}
+
+.form-floating input,
+.form-floating textarea {
+    height: 50px;
+}
+
+.form-floating label {
+    padding: 10px;
+    color: #495057;
+}
+
+
+
+@keyframes flipAnimation {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.7);
+    }
+}
+
+.tickMark {
+    animation: flipAnimation 4s linear infinite;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.tickMark {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.sendButton {
+    margin-left: 38%;
+}
+
+@media only screen and (max-width: 767px) {
+    .nav {
+        width: 100%;
+    }
+
+    .myName {
+        font-size: 26px;
+    }
+
+    .icons {
+        margin-left: 7px;
+        margin-right: 15px;
+    }
+
+    .sectionName {
+        padding: 1%;
+        border-left: 60px solid transparent !important;
+        border-right: 60px solid transparent !important;
+    }
+
+    .skillName {
+        margin-bottom: 2%;
+    }
+
+    .skillSection {
+        margin-left: 0%;
+    }
+
+    .experienceDetails {
+        margin-left: 0%;
+    }
+
+    .tickMark {
+        font-size: 30px;
+
+    }
+
+    .techSkills {
+        display: inline;
+        margin-left: 0%;
+    }
+
+    .techSkills2 {
+        display: inline;
+        margin-left: 0%;
+    }
+
+
+    .nav-item {
+        margin-right: 0%;
+    }
+
+
+}
+
+
+body.darkMode {
+    background-color: rgba(0, 0, 0);
+    background-image: linear-gradient(to right, rgba(78, 1, 94, 0.5), rgba(23, 119, 245, 0.2), rgba(199, 224, 12, 0.2));
+    color: white;
+}
+
+body.lightMode {
+    background-image: linear-gradient(to right, rgba(78, 1, 94, 0.2), rgba(23, 119, 245, 0.2), rgb(238, 177, 8, 0.1));
+    color: black;
+}
+
+
+body.darkMode a.iconLink {
+    text-decoration: none;
+    color: white;
+}
+
+body.lightMode a.iconLink {
+    text-decoration: none;
+    color: black;
+}
+
+
+body.darkMode .icons {
+    border: 2px solid white;
+
+}
+
+body.lightMode .icons {
+    border: 2px solid black;
+
+}
+
+
+body.darkMode .icons:hover {
+    background-color: white;
+    color: black;
+
+}
+
+body.lightMode .icons:hover {
+    background-color: black;
+    color: white;
+
+
+}
+
+body.darkMode .toggleicon {
+    background-color: white;
+    color: black;
+
+}
+
+body.lightMode .toggleicon {
+    background-color: black;
+    color: white;
+
+
+}
+
+body.darkMode .sectionName {
+    border: 3px solid rgb(251, 248, 248);
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    display: inline-block;
+    padding: 3%;
+
+}
+
+body.lightMode .sectionName {
+    border: 3px solid rgb(11 166 152);
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    display: inline-block;
+    padding: 3%;
+
+}
+
+body.darkMode .skillName {
+    border: 2px solid rgba(255, 193, 7, 1);
+
+}
+
+body.lightMode .skillName {
+    border: 2px solid rgb(245, 3, 253, 0.3);
+
+}
+
+body.darkMode .sendButton {
+    border: 2px solid #0dcaf0;
+    color: white;
+
+}
+
+body.darkMode .sendButton:hover {
+    background-color: #0dcaf0;
+    color: black;
+
+}
+
+body.lightMode .sendButton {
+    border: 2px solid rgb(253 165 3);
+    color: black;
+}
+
+body.lightMode .sendButton:hover {
+    background-color: rgb(253 165 3);
+    color: white;
+}
