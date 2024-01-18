@@ -370,15 +370,7 @@
                 form.</label>
         </div>
 
-        <div class="alert alert-danger d-flex align-items-center alertDiv mx-auto" role="alert" data-aos="zoom-in-up"
-            data-aos-duration="2000" id="alertMessage" style="display: none!important;;">
-            <ion-icon name="alert-circle-outline" class="alertIcon"></ion-icon>&nbsp;
 
-            <div>
-                Sorry !!! Due to some techical issue you can't contact through this form. Please Contact directly on the
-                above emailId.
-            </div>
-        </div>
 
         <div class="row" data-aos="zoom-in" data-aos-duration="1000">
             <div class="col-md-6 offset-md-3">
@@ -472,8 +464,7 @@
         });
 
         function submitAction() {
-
-            $("#alertMessage").css("display", "block");
+            alert("Sorry !!! Due to some techical issue you can't contact through this form. Please Contact directly to the given emailId.");
         }
 
 
