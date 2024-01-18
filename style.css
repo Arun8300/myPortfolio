@@ -7,7 +7,7 @@
 }
 
 .nav {
-    width: 30%;
+    width: 45%;
     background-color: rgb(255 255 255);
     border-radius: 10px;
     border: 5px solid transparent;
@@ -96,7 +96,7 @@
 
 .techSkills2 {
     display: flex;
-    margin-left: 34%;
+    margin-left: 30%;
 }
 
 
@@ -119,7 +119,14 @@
     color: #495057;
 }
 
+.alertDiv {
+    width: 65%;
+}
 
+.alertIcon {
+    color: red;
+    font-size: 50px;
+}
 
 @keyframes flipAnimation {
 
@@ -147,6 +154,19 @@
 .sendButton {
     margin-left: 38%;
 }
+
+.jobCard {
+    border: 3px solid white;
+    box-shadow: 10px 10px 5px lightblue;
+    padding: 10%;
+    padding: 2%;
+    margin-left: 17%;
+}
+
+.jobDetails {
+    display: flex;
+}
+
 
 @media only screen and (max-width: 767px) {
     .nav {
@@ -200,7 +220,23 @@
         margin-right: 0%;
     }
 
+    .jobCard {
+        margin-top: 10%;
+        padding: 10%;
+        margin-left: 0%;
+    }
 
+    .jobDetails {
+        display: block;
+    }
+
+    .alertDiv {
+        width: 100%;
+    }
+
+    .alertIcon {
+        font-size: 100px;
+    }
 }
 
 
