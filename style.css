@@ -6,6 +6,11 @@
     border-color: aliceblue;
 }
 
+#loadingMessage {
+    display: none;
+}
+  
+
 .nav {
     width: 45%;
     background-color: rgb(255 255 255);
@@ -24,12 +29,12 @@
 
 
 .nav-link:hover {
-
-    color: rgb(14, 20, 201) !important;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
+    color: #007bff!important;
 }
-
+.nav-link.active {
+    color: rgb(14, 20, 201) !important;
+    border-bottom: 2px solid blueviolet;
+}
 .toggleicon {
     font-size: 25px !important;
     float: right;
@@ -167,6 +172,89 @@
     display: flex;
 }
 
+
+
+.ring
+{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:150px;
+  height:150px;
+  background:transparent;
+  /* border:3px solid #3c3c3c; */
+  border-radius:50%;
+  text-align:center;
+  line-height:150px;
+  font-family:sans-serif;
+  font-size:20px;
+  color:#fff000;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  text-shadow:0 0 10px #fff000;
+  box-shadow:0 0 20px rgba(0,0,0,.5);
+}
+.ring:before
+{
+  content:'';
+  position:absolute;
+  top:-3px;
+  left:-3px;
+  width:100%;
+  height:100%;
+  border:3px solid transparent;
+  border-top:3px solid #fff000;
+  border-right:3px solid #fff000;
+  border-radius:50%;
+  animation:animateC 2s linear infinite;
+}
+span
+{
+  display:block;
+  position:absolute;
+  top:calc(50% - 2px);
+  left:50%;
+  width:50%;
+  height:4px;
+  background:transparent;
+  transform-origin:left;
+  animation:animate 2s linear infinite;
+}
+span:before
+{
+  content:'';
+  position:absolute;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:#fff000;
+  top:-6px;
+  right:-8px;
+  box-shadow:0 0 20px #fff000;
+}
+@keyframes animateC
+{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+@keyframes animate
+{
+  0%
+  {
+    transform:rotate(45deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
+  }
+}
 
 @media only screen and (max-width: 767px) {
     .nav {
@@ -320,12 +408,23 @@ body.lightMode .sectionName {
 
 body.darkMode .skillName {
     border: 2px solid rgba(255, 193, 7, 1);
+    
 
+}
+body.darkMode .skillName:hover {
+    box-shadow: 0 7px 50px rgb(3, 178, 247);
+    transform: scale(1.2)!important;
+    cursor: pointer;
 }
 
 body.lightMode .skillName {
     border: 2px solid rgb(245, 3, 253, 0.3);
 
+}
+body.lightMode .skillName:hover {
+    box-shadow: 0 7px 50px rgb(0 230 253);
+    transform: scale(1.2)!important;
+    cursor: pointer;
 }
 
 body.darkMode .sendButton {
