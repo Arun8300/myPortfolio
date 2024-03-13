@@ -12,10 +12,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/images.png"></link>
     <script src="./bootStrap/jquery.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 
 </head>
@@ -23,9 +27,15 @@
 <body class="darkMode">
    
     <div class="container" id="loadingMessage">
-        <div class="ring">Loading..
-            <span></span>
-          </div>
+          <ul class="loader">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
     </div>
 
     <div class="container-fluid" id="content" style="display: none;">
@@ -33,16 +43,20 @@
         <!-- --------------------------------------------------------------- -->
         <!-- navigation -->
         <div id="home"></div>
-        <nav class="mb-5 pt-3 navbar navbar-expand-lg sticky-top">
+        <nav class="mb-2 pt-3 navbar navbar-expand-lg sticky-top">
             <ul class="nav justify-content-center mx-auto shadow-lg mb-5 mx-4">
                 <li class="nav-item">
                     <a class="nav-link active" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#aboutMe">About Me</a>
+                </li>
+               
+                <li class="nav-item">
                     <a class="nav-link" href="#mySkills">My Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#myExperience">Experience</a>
+                    <a class="nav-link" href="#myExperience">My Journey</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contactMe">Contact Me</a>
@@ -61,20 +75,15 @@
 
         <div class="row">
 
-            <div class="col-md-4" data-aos="flip-left" data-aos-duration="1000">
-                <img src="./images/DSC_0236 aaaa.jpg" alt="my photo" class="mx-auto d-block image">
-            </div>
+           
 
-            <div class="col-md-6 text-wrap text-center" data-aos="fade-up">
+            <div class="col-md-8 text-wrap text-center" data-aos="fade-up">
                 <p class="myDetails">
 
-                    <b class="myName">Hii... My self Arunkumar, </b><br><b>Junior Software Developer</b> with <b>1.5
-                        year</b> of
-                    experience in
-                    <b>UI Development, NodeJs, SQL database, PHP and Knockout JS
-                        Technology.</b> Supportive and work well as part of a team with dedicated to efficiently
-                    resolving project
-                    issues. Ability and willingness to innovate and learn new technologies.
+                    <!-- <b class="myName">Hello... It's Me</b><br> -->
+                    <h3>Hello, It's Me</h3>
+                    <p class="myName">Arunkumar G</p>
+                    <span class="nameData"></span>
                 </p>
                 <div class="row mt-5">
                     <div class="col-md-12 col-sm-12">
@@ -100,12 +109,49 @@
 
                 </div>
             </div>
+            <div class="col-md-4" data-aos="flip-left" data-aos-duration="1000">
+                <img src="./images/arun.png" alt="my photo" class="mx-auto d-block image">
+            </div>
         </div>
 
         <!-- mydetails ends -->
         <!-- ----------------------------------------------------------------------- -->
 
 
+        <!-- About Me starts -->
+
+        <div id="aboutMe"></div>
+        <div class="text-center pb-4 sectionHead" data-aos="zoom-in" data-aos-duration="2000">
+            <div class="mx-auto">
+                <h1 class="sectionName">About Me</h1>
+            </div>
+
+            <div class="row d-flex">
+                <div class="col-md-4">
+                    <img src="./images/arun2.png" class="mx-auto d-block image2" />
+                </div>
+                <div class="col-md-6">
+                    <p class="mt-4 mb-4">
+                        <ion-icon name="hand-left-outline" class="hand"></ion-icon> &nbsp; <span class="viewer">Viewer...</span>
+                    </p>
+                    <p class="about mb-4">
+                        My self <b>ArunKumar</b> a <b>Junior Software Developer</b> with a passion for learning and developing software applications.
+                    </p>
+                        <p class="about mb-4">
+                            I have <b><i>1.5 Years</i> </b> of Experience in <b>UI Development, NodeJs, SQL database, PHP, AWS S3 and Knockout JS Technology.&nbsp;</b> <b> <i>2 Years </i></b> of Experience in <b> Software Trainer.</b>
+                        </p>
+                    <p class="about"> 
+                        Supportive and work well as part of a team with dedicated to efficiently                 resolving project
+                    issues. Ability and willingness to innovate and learn new technologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Me Ends -->
+        <!-- --------------------------------------------------------------- -->
+
+        
 
         <!-- --------------------------------------------------------------- -->
         <!-- Skill Section -->
@@ -127,7 +173,7 @@
                         data-aos-duration="2000">JavaScript
                     </div>
                     <div class="col-md-2 col-sm-1 skillName rounded-pill p-3" data-aos="fade-right"
-                        data-aos-duration="2000">BootStrap 4
+                        data-aos-duration="2000">BootStrap 5
                     </div>
                 </div>
             </div>
@@ -173,7 +219,7 @@
                     <div class="col-md-2 col-sm-1 skillName rounded-pill p-3" data-aos="flip-left"
                         data-aos-duration="3000">Git</div>
                     <div class="col-md-2 col-sm-1 skillName rounded-pill p-3" data-aos="flip-left"
-                        data-aos-duration="3000">RESTful APIs
+                        data-aos-duration="3000">MongoDB
                     </div>
 
                 </div>
@@ -191,7 +237,7 @@
         <div id="myExperience"></div>
         <div class="text-center pb-5 sectionHead" data-aos="zoom-in" data-aos-duration="1000">
             <div class="mx-auto">
-                <h1 class="sectionName">Professional Experience</h1>
+                <h1 class="sectionName">My Journey</h1>
             </div>
         </div>
 
@@ -276,20 +322,13 @@
                         </div>
                     </div>
 
-                    <!-- <div class="d-flex ms-5 mb-3">
-                        <div class="d-inline me-2">
-                            <b><ion-icon name="code-working-outline"
-                                    style="font-size: 20px;font-weight: 800;"></ion-icon></b>&nbsp;
-                        </div>
-                        <div class="d-inline">
-                            <label>GoPrac Website &nbsp;<a href="https://goprac.com/"
-                                    target="_blank">(Goprac.com)</a></label>
-                        </div>
-                    </div> -->
+                
 
                 </div>
             </div>
         </div>
+
+
 
         <!-- <div class="experienceDetails" data-aos="zoom-out-right" data-aos-duration="1000">
             <div>
@@ -371,7 +410,7 @@
                 <h1 class="sectionName">Contact Me</h1>
             </div>
             <label class="mt-4">Please contact me directly at <a
-                    mailto="arunkumargopal3268@gmail.com"><u>arunkumargopal3268@gmail.com</u>
+                    href="mailto:arunkumargopal3268@gmail.com"><u>arunkumargopal3268@gmail.com</u>
                 </a> or through this
                 form.</label>
         </div>
@@ -382,23 +421,27 @@
             <div class="col-md-6 offset-md-3">
                 <div class="contact-form">
                     <form onsubmit="submitAction()">
-                        <div class="form-floating">
+                        <div class="form-floating position-relative">
+                            <span><ion-icon name="person-circle-outline" class="position-absolute mailIcon"></ion-icon></span>
                             <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                             <label for="name">Your Name</label>
                         </div>
 
-                        <div class="form-floating">
+                        <div class="form-floating position-relative">
+                            <span><ion-icon name="mail-outline" class="position-absolute mailIcon"></ion-icon></span>
                             <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                             <label for="email">Your Email</label>
                         </div>
 
-                        <div class="form-floating">
-                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"
+                        <div class="form-floating position-relative">
+                            <span><ion-icon name="document-text-outline" class="position-absolute mailIcon"></ion-icon></span>
+                            <textarea class="form-control" id="message" rows="4" style="height: 20%;" placeholder="Your Message"
                                 required></textarea>
                             <label for="message">Your Message</label>
                         </div>
 
-                        <button type="submit" id="sendMessage" class="btn sendButton">Submit</button>
+                        <button type="submit" id="sendMessage" class="btn sendButton">Submit</button><br>
+                        <p class="mt-4 text-center">&copy; Designed and Maintained by me.</p>
                     </form>
                 </div>
             </div>
@@ -506,10 +549,21 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+var typed = new Typed('.nameData', {
+          strings: ["Software Developer", "Web Developer", "FullStack Developer","Backend Developer"],
+          typeSpeed: 100,
+          backSpeed: 80,
+          loop:true,
+          backDelay:1500
+      });
+
+
+
+
 </script>
 
 <script>
-
+//loader animation
 
  $(document).ready(function(){
         $("#loadingMessage").show();

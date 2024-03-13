@@ -1,15 +1,51 @@
 .image {
-    width: 40%;
-    border-radius: 10%;
-    border-style: solid;
-    border-width: 4px;
-    border-color: aliceblue;
+    width: 70%;
+    border-radius: 30%;
+    filter:  drop-shadow(2px 0px 40px #0ef);
+}
+.image2 {
+    width: 70%;
+    border-radius: 20%;
+    filter:  drop-shadow(1px 0px 10px rgb(255, 196, 0));
 }
 
 #loadingMessage {
     display: none;
 }
+
+.mailIcon{
+    top: 25%;
+    right: 5%;
+    font-size: 200%;
+    font-weight: 600;
+    z-index: 100;
+    color: rgb(252, 62, 24);
+}
   
+@keyframes waving {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.hand {
+    display: inline-block;
+    animation: waving 2s infinite;
+    color: yellow;
+    font-size: 40px;
+}
 
 .nav {
     width: 45%;
@@ -18,23 +54,49 @@
     border: 5px solid transparent;
 }
 
+.about{
+    font-size: 18px;
+}
+
+.viewer{
+    font-size: 30px;
+    font-weight: 700;
+}
+
 .nav-item {
     margin-right: 2%;
 }
 
 .nav-link {
+    position: relative;
     color: black !important;
     font-weight: 600 !important;
+    text-decoration: none;
 }
 
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: blueviolet; 
+    transition: width 0.3s ease; 
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    
+}
 
 .nav-link:hover {
     color: #007bff!important;
+    
 }
 .nav-link.active {
-    color: rgb(14, 20, 201) !important;
-    border-bottom: 2px solid blueviolet;
-}
+    color: rgb(187, 37, 82) !important;
+} 
 .toggleicon {
     font-size: 25px !important;
     float: right;
@@ -50,15 +112,128 @@
     transform: scale(1.2);
 }
 
-.myName {
-    font-size: 40px;
+/* .myName {
+    font-size: 30px;
     font-weight: 900;
     text-shadow: 3px 2px 5px #ee99bed4;
+} */
+
+.myName {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    background: rgb(9,117,121);
+    background: linear-gradient(120deg, rgba(9,117,121,1) 9%, rgba(236,255,0,1) 41%, rgb(252, 3, 107) 100%,rgb(252, 235, 3) 100%);
+    background-clip: text;
+    color: transparent;
+    background-size: 500px 500px;
+    animation:arun 3s ease infinite;
+    filter: drop-shadow(4px 7px 1px black);
+}
+
+@keyframes arun {
+    0%{
+        background-position: 0%;
+    }
+    50%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
+    }
+    
 }
 
 .myDetails {
     font-size: 19px;
 }
+
+
+.nameData {
+    font-size: 2.9rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+
+.typed-cursor {
+    font-size: 2.5rem;
+}
+
+
+/* loding Animation */
+
+.loader{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+.loader li{
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    animation: glow 1.6s ease-in-out infinite;
+}
+
+@keyframes glow{
+    0%,40%,100%{
+        transform: scale(0.2);
+    }
+    20%{
+        transform: scale(1);
+    }
+}
+
+.loader li:nth-child(1){
+    animation-delay: -1.4s;
+    background: #fff000;
+    box-shadow: 0 0 50pc #fff000;
+}
+
+.loader li:nth-child(2){
+    animation-delay: -1.2s;
+    background: #f06292;
+    box-shadow: 0 0 50pc #f06292;
+}
+
+.loader li:nth-child(3){
+    animation-delay: -1s;
+    background: #4fc3f7;
+    box-shadow: 0 0 50pc #4fc3f7;
+}
+
+.loader li:nth-child(4){
+    animation-delay: -0.8s;
+    background: #f57c00;
+    box-shadow: 0 0 50pc #f57c00;
+}
+
+.loader li:nth-child(5){
+    animation-delay: -0.6s;
+    background: #673ab7;
+    box-shadow: 0 0 50pc #673ab7;
+}
+
+.loader li:nth-child(6){
+    animation-delay: -0.4s;
+    background: #fff000;
+    box-shadow: 0 0 50pc #fff000;
+}
+
+.loader li:nth-child(7){
+    animation-delay: -0.2s;
+    background: #ba68c8;
+    box-shadow: 0 0 50pc #ba68c8;
+}
+
+/* loding Animation ends */
 
 .icons {
     font-size: 25px !important;
@@ -161,108 +336,46 @@
 }
 
 .jobCard {
-    border: 3px solid white;
-    box-shadow: 10px 10px 5px lightblue;
+    border: 2px solid white;
     padding: 10%;
     padding: 2%;
     margin-left: 17%;
+    box-shadow: 0px 1px 40px cyan;
 }
-
+.jobCard:hover {
+    box-shadow: 0px 1px 40px rgb(187, 255, 0);
+    transform: scale(1.2)!important;
+}
 .jobDetails {
     display: flex;
 }
 
 
+/* ------------------------------------------------------- */
 
-.ring
-{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  width:150px;
-  height:150px;
-  background:transparent;
-  /* border:3px solid #3c3c3c; */
-  border-radius:50%;
-  text-align:center;
-  line-height:150px;
-  font-family:sans-serif;
-  font-size:20px;
-  color:#fff000;
-  letter-spacing:4px;
-  text-transform:uppercase;
-  text-shadow:0 0 10px #fff000;
-  box-shadow:0 0 20px rgba(0,0,0,.5);
-}
-.ring:before
-{
-  content:'';
-  position:absolute;
-  top:-3px;
-  left:-3px;
-  width:100%;
-  height:100%;
-  border:3px solid transparent;
-  border-top:3px solid #fff000;
-  border-right:3px solid #fff000;
-  border-radius:50%;
-  animation:animateC 2s linear infinite;
-}
-span
-{
-  display:block;
-  position:absolute;
-  top:calc(50% - 2px);
-  left:50%;
-  width:50%;
-  height:4px;
-  background:transparent;
-  transform-origin:left;
-  animation:animate 2s linear infinite;
-}
-span:before
-{
-  content:'';
-  position:absolute;
-  width:16px;
-  height:16px;
-  border-radius:50%;
-  background:#fff000;
-  top:-6px;
-  right:-8px;
-  box-shadow:0 0 20px #fff000;
-}
-@keyframes animateC
-{
-  0%
-  {
-    transform:rotate(0deg);
-  }
-  100%
-  {
-    transform:rotate(360deg);
-  }
-}
-@keyframes animate
-{
-  0%
-  {
-    transform:rotate(45deg);
-  }
-  100%
-  {
-    transform:rotate(405deg);
-  }
-}
+/* For Mobile Edition start */
 
 @media only screen and (max-width: 767px) {
+    .nameData {
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        font-weight: 600;
+    }
+    
+    .typed-cursor {
+        font-size: 2.0rem;
+    }
+
+    .jobCard:hover {
+        box-shadow: 0px 1px 40px rgb(187, 255, 0);
+        transform: scale(1)!important;
+    }
     .nav {
         width: 100%;
     }
 
     .myName {
-        font-size: 26px;
+        font-size: 50px;
     }
 
     .icons {
@@ -306,6 +419,7 @@ span:before
 
     .nav-item {
         margin-right: 0%;
+        font-size: 13px;
     }
 
     .jobCard {
@@ -327,6 +441,9 @@ span:before
     }
 }
 
+
+/* ----------------------------------------------------------------------- */
+/* For Theme Mode Content start */
 
 body.darkMode {
     background-color: rgba(0, 0, 0);
@@ -365,14 +482,14 @@ body.lightMode .icons {
 body.darkMode .icons:hover {
     background-color: white;
     color: black;
+    box-shadow: 2px 7px 46px white!important;
 
 }
 
 body.lightMode .icons:hover {
     background-color: black;
     color: white;
-
-
+    box-shadow: 2px 7px 46px rgb(255, 0, 170)!important;
 }
 
 body.darkMode .toggleicon {
