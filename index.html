@@ -4,30 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Arunkumar G</title>
 
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="./style.css">
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome (icon library) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
+    <!-- AOS Animation Library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Devicon for Developer Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/images.png">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&display=swap" rel="stylesheet">
-    <link rel="icon" href="/images/images.png"></link>
-    <script src="./bootStrap/jquery.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Ionicons (icon library) -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
+    <!-- jQuery (for Bootstrap or DOM manipulation if needed) -->
+    <script src="./bootStrap/jquery.min.js"></script>
+
+    <!-- Typed.js for text animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 </head>
 
 <body class="darkMode">
-   
+
     <div class="container" id="loadingMessage">
-          <ul class="loader">
+        <ul class="loader">
             <li></li>
             <li></li>
             <li></li>
@@ -35,544 +54,490 @@
             <li></li>
             <li></li>
             <li></li>
-          </ul>
+        </ul>
     </div>
 
-    <div class="container-fluid" id="content" style="display: none;">
+    <div id="content" class="container" style="display: none;">
+        <!-- Animated Background Circles -->
+        <div class="animated-bg">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
+        <!-- Navigation starts-->
         <!-- --------------------------------------------------------------- -->
-        <!-- navigation -->
-        <div id="home"></div>
-        <nav class="mb-2 pt-3 navbar navbar-expand-lg sticky-top">
-            <ul class="nav justify-content-center mx-auto shadow-lg mb-5 mx-4">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#aboutMe">About Me</a>
-                </li>
-               
-                <li class="nav-item">
-                    <a class="nav-link" href="#mySkills">My Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#myExperience">My Journey</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contactMe">Contact Me</a>
-                </li>
-            </ul>
+
+        <nav class="navbar navbar-expand-lg sticky-top mb-5">
+            <div class="container">
+                <a class="navbar-brand fw-bold" style="color:#fff;">Arunkumar</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-target="home" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-target="aboutMe" href="#aboutMe">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-target="mySkills" href="#mySkills">My Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-target="mycertification" href="#mycertification">My
+                                Certification</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-target="myExperience" href="#myExperience">My Journey</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-target="contactMe" href="#contactMe">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        
-
+        <!-- navigation ends -->
         <!-- --------------------------------------------------------------- -->
 
 
+        <!-- My Details home section starts-->
+        <!-- --------------------------------------------------------------- -->
 
+        <section id="home" class="active">
 
-        <!-- ----------------------------------------------------------------------- -->
-        <!-- mydetails -->
-
-        <div class="row">
-
-           
-
-            <div class="col-md-8 text-wrap text-center" data-aos="fade-up">
-                <p class="myDetails">
-
-                    <!-- <b class="myName">Hello... It's Me</b><br> -->
-                    <h3>Hello, It's Me</h3>
+            <div class="row align-items-center">
+                <!-- Text Column -->
+                <div class="col-md-6 text-center text-md-start" data-aos="fade-up">
+                    <h3>Hi, I'm</h3>
                     <p class="myName">Arunkumar G</p>
+                    <p class="lead">Full Stack Developer & Aspiring Salesforce Analyst</p>
                     <span class="nameData"></span>
-                </p>
-                <div class="row mt-5">
-                    <div class="col-md-12 col-sm-12">
+                    <p class="mt-5">
+                        I build modern web applications and integrate CRM solutions to improve business
+                        processes. With 2 years of full stack experience and growing Salesforce expertise, I
+                        strive to deliver impactful, user-focused digital solutions.
+                    </p>
+                    <blockquote class="quote">"Coding is not just a skill—it's a mindset of building and
+                        solving."</blockquote>
+
+                    <!-- Social Icons -->
+                    <div class="mt-5">
                         <a href="https://www.linkedin.com/in/arunkumar-g-5200a4218/" target="_blank" class="iconLink"
                             title="LinkedIn">
-                            <ion-icon data-aos="zoom-out" name="logo-linkedin" class="icons shadow-lg"></ion-icon>
+                            <ion-icon name="logo-linkedin" class="icons shadow-lg"></ion-icon>
                         </a>
-
                         <a href="https://github.com/Arun8300" target="_blank" class="iconLink" title="GitHub">
-                            <ion-icon data-aos="zoom-out" name="logo-github" class="icons shadow-lg"></ion-icon>
+                            <ion-icon name="logo-github" class="icons shadow-lg"></ion-icon>
                         </a>
-
-                        <a href="" class="iconLink" id="downloadCV" title="Download CV">
-                            <ion-icon data-aos="zoom-out" name="cloud-download-outline"
-                                class="icons shadow-lg"></ion-icon>
+                        <a href="#" class="iconLink" id="downloadCV" title="Download CV">
+                            <ion-icon name="cloud-download-outline" class="icons shadow-lg"></ion-icon>
                         </a>
-
-                        <a href="#contactMe" class="iconLink" title="Contact">
-                            <ion-icon data-aos="zoom-out" name="mail-outline" class="icons shadow-lg"></ion-icon>
+                        <a href="mailto:arunkumargopal3268@gmail.com" class="iconLink" title="Contact via Email">
+                            <ion-icon name="mail-outline" class="icons shadow-lg"></ion-icon>
                         </a>
+                    </div>
+                </div>
 
+                <div class="col-md-6" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="./images/arun.png" alt="my photo" class="mx-auto d-block image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Home section ends -->
+        <!-- --------------------------------------------------------------- -->
+
+
+
+        <!-- About Me Section starts-->
+        <!-- --------------------------------------------------------------- -->
+
+
+        <section id="aboutMe">
+            <div class="container position-relative">
+                <div class="text-center mb-5" data-aos="zoom-in" data-aos-duration="1500">
+                    <h1 class="sectionName">About Me</h1>
+                    <p class="text-mute">Let’s grow together by sharing skills and solving challenges.</p>
+                </div>
+
+                <!-- Added gutter for spacing -->
+                <div class="row align-items-center gx-5">
+                    <!-- Image -->
+                    <div class="col-md-4 text-center mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1200">
+                        <div class="img-wrapper">
+                            <img src="./images/arun2.png" alt="ArunKumar" />
+                        </div>
                     </div>
 
-                </div>
-            </div>
-            <div class="col-md-4" data-aos="flip-left" data-aos-duration="1000">
-                <img src="./images/arun.png" alt="my photo" class="mx-auto d-block image">
-            </div>
-        </div>
-
-        <!-- mydetails ends -->
-        <!-- ----------------------------------------------------------------------- -->
-
-
-        <!-- About Me starts -->
-
-        <div id="aboutMe"></div>
-        <div class="text-center pb-4 sectionHead" data-aos="zoom-in" data-aos-duration="2000">
-            <div class="mx-auto">
-                <h1 class="sectionName">About Me</h1>
-            </div>
-
-            <div class="row d-flex">
-                <div class="col-md-4">
-                    <img src="./images/arun2.png" class="mx-auto d-block image2" />
-                </div>
-                <div class="col-md-6">
-                    <p class="mt-4 mb-4">
-                        <ion-icon name="hand-left-outline" class="hand"></ion-icon> &nbsp; <span class="viewer">Viewer...</span>
-                    </p>
-                    <p class="about mb-4">
-                        My self <b>ArunKumar</b> a <b>Junior Software Developer</b> with a passion for learning and developing software applications.
-                    </p>
-                        <p class="about mb-4">
-                            I have <b><i>1.5 Years</i> </b> of Experience in <b>UI Development, NodeJs, SQL database, PHP, AWS S3 and Knockout JS Technology.&nbsp;</b> <b> <i>2 Years </i></b> of Experience in <b> Software Trainer.</b>
+                    <!-- Text Content -->
+                    <div class="col-md-8" data-aos="fade-left" data-aos-duration="1200">
+                        <p class="lead">
+                            👋 Hello! I'm <strong>ArunKumar</strong>, a dedicated <strong>Full Stack Developer</strong>
+                            with over <strong>2 years</strong> of experience crafting scalable, user-focused
+                            applications.
                         </p>
-                    <p class="about"> 
-                        Supportive and work well as part of a team with dedicated to efficiently                 resolving project
-                    issues. Ability and willingness to innovate and learn new technologies.
-                    </p>
+
+                        <p>I’m currently working as a <strong>Salesforce Analyst</strong>, where I bring together
+                            technical development and customer-centric CRM strategies.</p>
+
+                        <p><strong>Certifications:</strong></p>
+                        <ul>
+                            <li>Salesforce AI Associate</li>
+                            <li>Salesforce Data Cloud Certification</li>
+                        </ul>
+
+                        <p><strong>Practical Salesforce Experience:</strong></p>
+                        <ul>
+                            <li>Developed <strong>Lightning Pages</strong> and custom user experiences</li>
+                            <li>Created <strong>Flows</strong> for business automation</li>
+                            <li>Written <strong>Apex code</strong> for custom server-side logic</li>
+                            <li>Integrated with <strong>Mulesoft</strong> for seamless Salesforce connectivity</li>
+                        </ul>
+
+                        <p><strong>Full Stack Skills:</strong> HTML, CSS, JavaScript, PHP, Node.js, MySQL, MongoDB,
+                            AWS S3, Knockout.js</p>
+
+                        <p><strong>Past Experience:</strong> 1.5 years in UI/Backend Development, 1 year as a
+                            Software Trainer</p>
+
+                        <p>🌟 I’m passionate about building technology that solves real-world problems. Let’s connect
+                            and collaborate!</p>
+
+                        <!-- Skill Badges -->
+                        <div class="mt-3">
+                            <span class="badge-skill">Salesforce</span>
+                            <span class="badge-skill">Apex</span>
+                            <span class="badge-skill">Flows</span>
+                            <span class="badge-skill">Mulesoft</span>
+                            <span class="badge-skill">JavaScript</span>
+                            <span class="badge-skill">Node.js</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- About Me Ends -->
+
+        <!-- Skills  section start-->
         <!-- --------------------------------------------------------------- -->
-
-        
-
-        <!-- --------------------------------------------------------------- -->
-        <!-- Skill Section -->
-        <div id="mySkills"></div>
-        <div class="text-center pb-5 sectionHead" data-aos="zoom-in" data-aos-duration="2000">
-            <div class="mx-auto">
+        <section id="mySkills">
+            <div class="container text-center pb-4">
                 <h1 class="sectionName">Technical Skills</h1>
-            </div>
 
-            <div class="row">
+                <div class="row g-4 mt-4">
 
-                <div class="col-md-8 col-sm-12 techSkills mt-3">
-
-                    <div class="col-md-2 col-sm-1 skillName rounded-pill p-3" data-aos="fade-right"
-                        data-aos-duration="2000">HTML</div>
-                    <div class="col-md-2 col-sm-1 skillName rounded-pill p-3" data-aos="fade-right"
-                        data-aos-duration="2000">CSS</div>
-                    <div class="col-md-2 col-sm-1 skillName rounded-pill p-3" data-aos="fade-right"
-                        data-aos-duration="2000">JavaScript
+                    <!-- Salesforce Admin -->
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up">
+                        <div class="skill-card">
+                            <i class="devicon-salesforce-plain"></i>
+                            <div class="skill-title">Salesforce Admin</div>
+                            <div class="skill-desc">Manage org, users & security</div>
+                        </div>
                     </div>
-                    <div class="col-md-2 col-sm-1 skillName rounded-pill p-3" data-aos="fade-right"
-                        data-aos-duration="2000">BootStrap 5
+
+                    <!-- Apex -->
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="50">
+                        <div class="skill-card">
+                            <i class="devicon-salesforce-plain"></i>
+                            <div class="skill-title">Apex</div>
+                            <div class="skill-desc">Salesforce proprietary language</div>
+                        </div>
+                    </div>
+
+                    <!-- Mulesoft for Salesforce -->
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-card">
+                            <img class="sf-icon" src="https://www.mulesoft.com/sites/default/files/mulesoft-logo.png"
+                                alt="Mulesoft" title="Mulesoft Logo" />
+                            <div class="skill-title">Mulesoft for Salesforce</div>
+                            <div class="skill-desc">API integrations & orchestration</div>
+                        </div>
+                    </div>
+
+                    <!-- HTML -->
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-card">
+                            <i class="devicon-html5-plain colored"></i>
+                            <div class="skill-title">HTML</div>
+                            <div class="skill-desc">Semantic & accessible markup</div>
+                        </div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="250">
+                        <div class="skill-card">
+                            <i class="devicon-css3-plain colored"></i>
+                            <div class="skill-title">CSS</div>
+                            <div class="skill-desc">Flexbox, Grid & responsive design</div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="skill-card">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <div class="skill-title">JavaScript</div>
+                            <div class="skill-desc">ES6+, DOM manipulation</div>
+                        </div>
+                    </div>
+
+                    <!-- Bootstrap 5 -->
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="350">
+                        <div class="skill-card">
+                            <i class="devicon-bootstrap-plain colored"></i>
+                            <div class="skill-title">Bootstrap 5</div>
+                            <div class="skill-desc">Responsive UI & components</div>
+                        </div>
+                    </div>
+
+                    <!-- ReactJs -->
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="skill-card">
+                            <i class="devicon-react-original colored"></i>
+                            <div class="skill-title">ReactJs</div>
+                            <div class="skill-desc">Hooks, JSX & SPA development</div>
+                        </div>
+                    </div>
+
+                    <!-- jQuery -->
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="skill-card">
+                            <i class="devicon-jquery-plain colored"></i>
+                            <div class="skill-title">jQuery</div>
+                            <div class="skill-desc">DOM manipulation & AJAX</div>
+                        </div>
+                    </div>
+
+                    <!-- Java -->
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="550">
+                        <div class="skill-card">
+                            <i class="devicon-java-plain colored"></i>
+                            <div class="skill-title">Java</div>
+                            <div class="skill-desc">OOP & backend development</div>
+                        </div>
+                    </div>
+
+                    <!-- Python -->
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="600">
+                        <div class="skill-card">
+                            <i class="devicon-python-plain colored"></i>
+                            <div class="skill-title">Python</div>
+                            <div class="skill-desc">Scripting & data analysis</div>
+                        </div>
+                    </div>
+
+                    <!-- PHP -->
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="650">
+                        <div class="skill-card">
+                            <i class="devicon-php-plain colored"></i>
+                            <div class="skill-title">PHP</div>
+                            <div class="skill-desc">Server-side scripting</div>
+                        </div>
+                    </div>
+
+                    <!-- Node Js -->
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="700">
+                        <div class="skill-card">
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <div class="skill-title">Node Js</div>
+                            <div class="skill-desc">Server & API development</div>
+                        </div>
+                    </div>
+
+                    <!-- MySQL -->
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="750">
+                        <div class="skill-card">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <div class="skill-title">MySQL</div>
+                            <div class="skill-desc">Relational database management</div>
+                        </div>
+                    </div>
+
+                    <!-- Git -->
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="800">
+                        <div class="skill-card">
+                            <i class="devicon-git-plain colored"></i>
+                            <div class="skill-title">Git</div>
+                            <div class="skill-desc">Version control & collaboration</div>
+                        </div>
+                    </div>
+
+                    <!-- MongoDB -->
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="850">
+                        <div class="skill-card">
+                            <i class="devicon-mongodb-plain colored"></i>
+                            <div class="skill-title">MongoDB</div>
+                            <div class="skill-desc">NoSQL database</div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-
-                <div class="col-md-8 col-sm-12 techSkills2 mt-3">
-
-                    <div class="col-md-2 col-sm-1 skillName rounded-pill p-3" data-aos="flip-left"
-                        data-aos-duration="3000">ReactJs</div>
-                    <div class="col-md-2 col-sm-1 skillName rounded-pill p-3" data-aos="flip-left"
-                        data-aos-duration="3000">Knockout Js</div>
-                    <div class="col-md-2 col-sm-1 skillName rounded-pill p-3" data-aos="flip-left"
-                        data-aos-duration="3000">jQuery
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row">
-
-                <div class="col-md-8 col-sm-12 techSkills mt-3">
-
-                    <div class="col-md-2 col-sm-1 skillName rounded-pill p-3" data-aos="fade-right"
-                        data-aos-duration="2000">Java</div>
-                    <div class="col-md-2 col-sm-1 skillName rounded-pill p-3" data-aos="fade-right"
-                        data-aos-duration="2000">Python</div>
-                    <div class="col-md-2 col-sm-1 skillName rounded-pill p-3" data-aos="fade-right"
-                        data-aos-duration="2000">PHP
-                    </div>
-                    <div class="col-md-2 col-sm-1 skillName rounded-pill p-3" data-aos="fade-right"
-                        data-aos-duration="2000">Node Js
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-
-                <div class="col-md-8 col-sm-12 techSkills2 mt-3">
-
-                    <div class="col-md-2 col-sm-1 skillName rounded-pill p-3" data-aos="flip-left"
-                        data-aos-duration="3000">MySQL</div>
-                    <div class="col-md-2 col-sm-1 skillName rounded-pill p-3" data-aos="flip-left"
-                        data-aos-duration="3000">Git</div>
-                    <div class="col-md-2 col-sm-1 skillName rounded-pill p-3" data-aos="flip-left"
-                        data-aos-duration="3000">MongoDB
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-        <!-- skillsection ends -->
+        </section>
+        <!-- Skill section ends -->
         <!-- --------------------------------------------------------------- -->
 
 
+        <!-- My Certification section starts -->
+        <!-- --------------------------------------------------------------- -->
+
+        <section id="mycertification">
+            <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
+                <h1 class="sectionName">My Certifications</h1>
+            </div>
+            <div class="cert-flow mt-5">
+
+                <div class="cert-card skill-card" data-aos="fade-right">
+                    <i class="devicon-salesforce-plain"></i>
+                    <div class="cert-title">Salesforce AI Associate</div>
+                    <div class="cert-date">Completed: Dec 2024</div>
+                    <div class="cert-desc">
+                        Demonstrated knowledge in AI fundamentals, Salesforce AI platform capabilities, and ethical AI
+                        implementation.
+                    </div>
+                </div>
+
+                <div class="cert-card skill-card" data-aos="fade-left" data-aos-delay="100">
+                    <i class="devicon-salesforce-plain"></i>
+                    <div class="cert-title">Salesforce Data Cloud Consultant</div>
+                    <div class="cert-date">Completed: Jan 2025</div>
+                    <div class="cert-desc">
+                        Expertise in customer data platform (CDP), segmentation, identity resolution, and real-time data
+                        management.
+                    </div>
+                </div>
+
+        </section>
+        <!-- My Certification section end -->
+        <!-- --------------------------------------------------------------- -->
 
 
-        <!-- Experience Section -->
-        <div id="myExperience"></div>
-        <div class="text-center pb-5 sectionHead" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="mx-auto">
+        <!-- Experience section starts-->
+        <!-- --------------------------------------------------------------- -->
+        <section id="myExperience">
+            <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
                 <h1 class="sectionName">My Journey</h1>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-md-12 jobDetails">
-                <div class="col-md-3 jobCard" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                    data-aos-duration="500">
+            <div class="timeline">
 
-                    <div class="d-flex ms-5 mb-3">
-                        <div class="d-inline me-2">
-                            <ion-icon name="business-outline"
-                                style="font-size: 20px;font-weight: 800;"></ion-icon>&nbsp;
-                        </div>
-                        <div class="d-inline">
-                            <label>GoPrac Pvt. Ltd. Bangalore</label>
-                        </div>
+                <!-- Center milestone dots -->
+                <div class="center-dot" style="top: 160px;"></div>
+                <div class="center-dot" style="top: 455px;"></div>
+                <div class="center-dot" style="top: 750px;"></div>
+
+                <!-- Job 1 -->
+                <div class="timeline-item left" data-year="2022" data-aos="fade-right" data-aos-duration="800"
+                    data-aos-easing="ease-in-out">
+                    <div class="content">
+                        <h5><ion-icon name="business-outline"></ion-icon>GoPrac Pvt. Ltd., Bangalore</h5>
+                        <p><ion-icon name="briefcase-outline"></ion-icon>Junior Software Developer</p>
+                        <p><ion-icon name="calendar-outline"></ion-icon>Jul 2022 – Oct 2023</p>
+                        <p><ion-icon name="link-outline"></ion-icon><a href="https://goprac.com/" target="_blank">GoPrac
+                                Website</a></p>
                     </div>
-
-                    <div class="d-flex ms-5 mb-3">
-                        <div class="d-inline me-2">
-                            <b><ion-icon name="briefcase-outline"
-                                    style="font-size: 20px;font-weight: 800;"></ion-icon></b>&nbsp;
-                        </div>
-                        <div class="d-inline">
-                            <label>Junior Software Developer</label>
-                        </div>
-                    </div>
-
-                    <div class="d-flex ms-5 mb-3">
-                        <div class="d-inline me-2">
-                            <b><ion-icon name="calendar-outline"
-                                    style="font-size: 20px;font-weight: 800;"></ion-icon></b>&nbsp;
-                        </div>
-                        <div class="d-inline">
-                            <label>Jul - 2022 to Oct - 2023</label>
-                        </div>
-                    </div>
-
-                    <div class="d-flex ms-5 mb-3">
-                        <div class="d-inline me-2">
-                            <b><ion-icon name="code-working-outline"
-                                    style="font-size: 20px;font-weight: 800;"></ion-icon></b>&nbsp;
-                        </div>
-                        <div class="d-inline">
-                            <label>GoPrac Website &nbsp;<a href="https://goprac.com/"
-                                    target="_blank">(Goprac.com)</a></label>
-                        </div>
-                    </div>
-
                 </div>
 
-                <div class="col-md-3 jobCard" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                    data-aos-duration="500">
-
-                    <div class="d-flex ms-5 mb-3">
-                        <div class="d-inline me-2">
-                            <ion-icon name="business-outline"
-                                style="font-size: 20px;font-weight: 800;"></ion-icon>&nbsp;
-                        </div>
-                        <div class="d-inline">
-                            <label>CSC Computer Education, Hosur</label>
-                        </div>
+                <!-- Job 2 -->
+                <div class="timeline-item right" data-year="2023" data-aos="flip-up" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
+                    <div class="content">
+                        <h5><ion-icon name="business-outline"></ion-icon>CSC Computer Education, Hosur</h5>
+                        <p><ion-icon name="briefcase-outline"></ion-icon>Programming Trainer</p>
+                        <p><ion-icon name="calendar-outline"></ion-icon>Nov 2023 – Jun 2024</p>
                     </div>
+                </div>
 
-                    <div class="d-flex ms-5 mb-3">
-                        <div class="d-inline me-2">
-                            <b><ion-icon name="briefcase-outline"
-                                    style="font-size: 20px;font-weight: 800;"></ion-icon></b>&nbsp;
-                        </div>
-                        <div class="d-inline">
-                            <label>Programming Trainer</label>
-                        </div>
+                <!-- Job 3 -->
+                <div class="timeline-item left" data-year="2024" data-aos="zoom-in-up" data-aos-duration="900"
+                    data-aos-easing="ease-in-out">
+                    <div class="content">
+                        <h5><ion-icon name="business-outline"></ion-icon>Cervello India Pvt. Ltd. (A Kearney Company),
+                            Bangalore</h5>
+                        <p><ion-icon name="briefcase-outline"></ion-icon>Salesforce Analyst</p>
+                        <p><ion-icon name="calendar-outline"></ion-icon>Jun 2024 – Present</p>
+                        <p><ion-icon name="link-outline"></ion-icon><a href="https://mycervello.com/"
+                                target="_blank">Cervello Website</a></p>
                     </div>
-
-                    <div class="d-flex ms-5 mb-3">
-                        <div class="d-inline me-2">
-                            <b><ion-icon name="calendar-outline"
-                                    style="font-size: 20px;font-weight: 800;"></ion-icon></b>&nbsp;
-                        </div>
-                        <div class="d-inline">
-                            <label>Nov - 2023 to Present</label>
-                        </div>
-                    </div>
-
-                
-
                 </div>
             </div>
-        </div>
-
-
-
-        <!-- <div class="experienceDetails" data-aos="zoom-out-right" data-aos-duration="1000">
-            <div>
-
-                <label class="mt-4" style="font-size: 18px;"><b>Company : </b>&nbsp; GoPrac Pvt. Ltd.
-                    Bangalore</label><br>
-
-                <label class="mt-4" style="font-size: 18px;"><b>Role : </b>&nbsp; Junior Software
-                    Developer</label><br>
-
-                <label class="mt-4" style="font-size: 18px;"><b>Project : </b>&nbsp; GoPrac website <a
-                        href="https://goprac.com/" target="_blank">( Goprac.com )</a></label>
-                <br>
-                <label class="mt-4" style="font-size: 18px;"><b>Technologies Used : </b>&nbsp; Node Js,
-                    Knockout Js, HTML and CSS, Bootstrap 4, PHP, AWS S3 and MySQL.</label>
-                <h4 class="mt-3">Responsibility:</h4>
-
-            </div>
-
-
-            <div class="d-flex ms-5 mb-3">
-                <div class="d-inline me-2">
-                    <ion-icon name="checkmark-circle-outline" class="tickMark"></ion-icon>&nbsp;
-                </div>
-                <div class="d-inline">
-                    <label>Creating and Implementing new UI features to the software.</label>
-                </div>
-            </div>
-
-            <div class="d-flex ms-5 mb-3">
-                <div class="d-inline me-2">
-                    <ion-icon name="checkmark-circle-outline" class="tickMark"></ion-icon>&nbsp;
-                </div>
-                <div class="d-inline">
-                    <label>Worked with database for query optimization and process improvement.</label>
-                </div>
-            </div>
-
-            <div class="d-flex ms-5 mb-3">
-                <div class="d-inline me-2">
-                    <ion-icon name="checkmark-circle-outline" class="tickMark"></ion-icon>&nbsp;
-                </div>
-                <div class="d-inline">
-                    <label>Supported Index software development and testing processes.</label>
-                </div>
-            </div>
-
-            <div class="d-flex ms-5 mb-3">
-                <div class="d-inline me-2">
-                    <ion-icon name="checkmark-circle-outline" class="tickMark"></ion-icon>&nbsp;
-                </div>
-                <div class="d-inline">
-                    <label>Creating PHP and Node Js Rest API and handling Json data responses.</label>
-                </div>
-            </div>
-
-            <div class="d-flex ms-5 mb-3">
-                <div class="d-inline me-2">
-                    <ion-icon name="checkmark-circle-outline" class="tickMark"></ion-icon>&nbsp;
-                </div>
-                <div class="d-inline">
-                    <label>Boosted the number of active users by resolving bugs and introducing new features in the
-                        software.</label>
-                </div>
-            </div>
-
-        </div> -->
-
-
+        </section>
         <!-- experience ends -->
         <!-- --------------------------------------------------------------- -->
 
 
+
         <!-- concat me form -->
         <!-- --------------------------------------------------------------- -->
-        <div id="contactMe"></div>
-        <div class="text-center pb-5 sectionHead" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="mx-auto">
-                <h1 class="sectionName">Contact Me</h1>
+        <section id="contactMe">
+            <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="mx-auto">
+                    <h1 class="sectionName">Contact Me</h1>
+                </div>
+                <label class="mt-4">Please contact me directly at <a
+                        href="mailto:arunkumargopal3268@gmail.com"><u>arunkumargopal3268@gmail.com</u>
+                    </a> or through this
+                    form.</label>
             </div>
-            <label class="mt-4">Please contact me directly at <a
-                    href="mailto:arunkumargopal3268@gmail.com"><u>arunkumargopal3268@gmail.com</u>
-                </a> or through this
-                form.</label>
-        </div>
 
 
 
-        <div class="row" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="col-md-6 offset-md-3">
-                <div class="contact-form">
-                    <form onsubmit="submitAction()">
-                        <div class="form-floating position-relative">
-                            <span><ion-icon name="person-circle-outline" class="position-absolute mailIcon"></ion-icon></span>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                            <label for="name">Your Name</label>
-                        </div>
+            <div class="row mt-4" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="col-md-6 offset-md-3">
+                    <div class="contact-form">
+                        <form onsubmit="submitAction()">
+                            <div class="form-floating position-relative">
+                                <span><ion-icon name="person-circle-outline"
+                                        class="position-absolute mailIcon"></ion-icon></span>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                <label for="name">Your Name</label>
+                            </div>
 
-                        <div class="form-floating position-relative">
-                            <span><ion-icon name="mail-outline" class="position-absolute mailIcon"></ion-icon></span>
-                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                            <label for="email">Your Email</label>
-                        </div>
+                            <div class="form-floating position-relative">
+                                <span><ion-icon name="mail-outline"
+                                        class="position-absolute mailIcon"></ion-icon></span>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                <label for="email">Your Email</label>
+                            </div>
 
-                        <div class="form-floating position-relative">
-                            <span><ion-icon name="document-text-outline" class="position-absolute mailIcon"></ion-icon></span>
-                            <textarea class="form-control" id="message" rows="4" style="height: 20%;" placeholder="Your Message"
-                                required></textarea>
-                            <label for="message">Your Message</label>
-                        </div>
+                            <div class="form-floating position-relative">
+                                <span><ion-icon name="document-text-outline"
+                                        class="position-absolute mailIcon"></ion-icon></span>
+                                <textarea class="form-control" id="message" rows="4" style="height: 20%;"
+                                    placeholder="Your Message" required></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
 
-                        <button type="submit" id="sendMessage" class="btn sendButton">Submit</button><br>
-                        <p class="mt-4 text-center">&copy; Designed and Maintained by me.</p>
-                    </form>
+                            <button type="submit" id="sendMessage" class="btn sendButton">Submit</button><br>
+
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-
-
+        </section>
 
         <!-- contact me ends -->
         <!-- --------------------------------------------------------------- -->
 
 
-
-
-
-        <!-- dark/light mode switch -->
-        <!-- --------------------------------------------------------------- -->
-        <div id="btnSwitch">
-
-            <ion-icon name="sunny-outline" class="toggleicon shadow-lg" id="lightMode"></ion-icon>
-            <ion-icon name="moon-outline" class="toggleicon shadow-lg" style="display: none;" id="darkMode"></ion-icon>
-
-        </div>
-
-        <!-- mode switch ends -->
-        <!-- --------------------------------------------------------------- -->
-
-
-
-
     </div>
 
-
-
-
-    <script>
-        // mode changing
-        document.getElementById('btnSwitch').addEventListener('click', () => {
-            if (document.getElementsByTagName('body')[0].className == 'darkMode') {
-                document.getElementsByTagName('body')[0].className = 'lightMode';
-                $("#lightMode").css("display", "none");
-                $("#darkMode").css("display", "block");
-            }
-            else {
-                document.getElementsByTagName('body')[0].className = 'darkMode';
-                $("#lightMode").css("display", "block");
-                $("#darkMode").css("display", "none");
-            }
-        });
-
-
-        //donwlode pdf
-
-        $(document).ready(function () {
-            var fileUrl = './cvFolder/G_Arunkumar.pdf';
-
-            $('#downloadCV').on('click', function () {
-                var downloadLink = document.createElement('a');
-
-                downloadLink.href = fileUrl;
-
-                downloadLink.download = 'G_Arunkumar_Resume.pdf';
-
-                document.body.appendChild(downloadLink);
-
-                downloadLink.click();
-
-                document.body.removeChild(downloadLink);
-            });
-        });
-
-        function submitAction() {
-            alert("Sorry !!! Due to some techical issue you can't contact through this form. Please Contact directly to the given emailId.");
-        }
-
-
-    </script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
 
-document.addEventListener("DOMContentLoaded", function() {
-    var navLinks = document.querySelectorAll('.nav-link');
-
-    navLinks.forEach(function(navLink) {
-        navLink.addEventListener("click", function() {
-            navLinks.forEach(function(link) {
-                link.classList.remove("active");
-            });
-            this.classList.add("active");
-        });
-    });
-
-    // Set active class based on URL fragment
-    var currentFragment = window.location.hash.substr(1);
-    if (currentFragment) {
-        navLinks.forEach(function(navLink) {
-            if (navLink.getAttribute("href").substr(1) === currentFragment) {
-                navLink.classList.add("active");
-            }
-        });
-    }
-});
-
-var typed = new Typed('.nameData', {
-          strings: ["Software Developer", "Web Developer", "FullStack Developer","Backend Developer"],
-          typeSpeed: 100,
-          backSpeed: 80,
-          loop:true,
-          backDelay:1500
-      });
-
-
-
-
-</script>
-
-<script>
-//loader animation
-
- $(document).ready(function(){
-        $("#loadingMessage").show();
-        setTimeout(function(){
-            $("#loadingMessage").hide();
-            $("#content").show();
-        }, 3000); 
-    });
-</script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
